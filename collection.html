@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collections | Bangre Jewellers</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Collection CSS -->
+    <link rel="stylesheet" href="style/collection.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style/index.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+
+                <img src="assets/logo/logo.png" alt="Bangre Jewellers">
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="navigation">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="collection.html" class="nav-link">
+                    Shop
+                </a>
+
+                <a href="about.html" class="nav-link">
+                    About Us
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    Contact Us
+                </a>
+
+                <a href="termandcondition.html" class="nav-link">
+                    Terms & Conditions
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+
+    <main>
+
+
+        <!-- ================= COLLECTION HERO ================= -->
+
+        <section class="collection-hero">
+
+            <div class="collection-hero-overlay"></div>
+
+            <img src="assets/collection/collection_main.png" alt="Bangre Jewellers Collection"
+                class="collection-hero-image">
+
+            <div class="collection-hero-content">
+
+                <span class="hero-eyebrow">
+                    THE ART OF JEWELLERY
+                </span>
+
+                <h1>
+                    Our Collections
+                </h1>
+
+                <span class="hero-line"></span>
+
+                <p>
+                    Discover timeless jewellery crafted to celebrate
+                    every beautiful chapter of your life.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             COLLECTION INTRO
+        ====================================================== -->
+
+        <section class="collection-intro" id="collections-section">
+
+            <div class="section-heading">
+
+                <span class="section-eyebrow">
+                    DISCOVER SOMETHING BEAUTIFUL
+                </span>
+
+                <h2>
+                    Explore Our Collections
+                </h2>
+
+                <span class="heading-line"></span>
+
+                <p>
+                    From timeless gold to refined diamonds,
+                    discover jewellery designed for every occasion,
+                    every style and every story.
+                </p>
+
+            </div>
+
+
+            <!-- ================= COLLECTION FILTER ================= -->
+
+            <div class="collection-filters">
+
+                <button type="button" class="filter-btn active" data-filter="all">
+                    All Jewellery
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="gold">
+                    Gold
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="diamond">
+                    Diamond
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="silver">
+                    Silver
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 COLLECTION GRID
+            ================================================== -->
+
+            <!--
+                JavaScript will automatically create the
+                jewellery cards inside this grid.
+            -->
+
+            <div class="collection-grid" id="collectionGrid"></div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             SIGNATURE COLLECTION
+        ====================================================== -->
+
+        <section class="signature-section">
+
+            <div class="signature-content">
+
+                <span>
+                    CURATED FOR YOU
+                </span>
+
+                <h2>
+                    The Signature<br>
+                    Collection
+                </h2>
+
+                <p>
+                    Discover our most distinctive pieces,
+                    thoughtfully selected for those who
+                    appreciate timeless beauty.
+                </p>
+
+                <a href="#" class="signature-button">
+                    Explore Signature Collection
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="signature-image">
+
+                <img src="assets/collection/collection_signatur_jewellery.png" alt="Signature Jewellery Collection">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CUSTOM JEWELLERY CTA
+        ====================================================== -->
+
+        <section class="collection-custom">
+
+            <div class="custom-overlay"></div>
+
+            <img src="assets/home/home_customised_jewellery.png" alt="Custom Jewellery" class="custom-background">
+
+            <div class="custom-content">
+
+                <span>
+                    MADE JUST FOR YOU
+                </span>
+
+                <h2>
+                    Create Something<br>
+                    Truly Yours
+                </h2>
+
+                <p>
+                    Bring your vision to life with jewellery
+                    crafted especially for you.
+                </p>
+
+                <a href="#" class="custom-button">
+                    Explore Customisation
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER START
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-column footer-brand">
+
+                <h3>
+                    Bangre Jewellers
+                </h3>
+
+                <p class="footer-tagline">
+                    Trusted Jewellery Brand Since 1978
+                </p>
+
+                <p class="footer-address">
+                    opposite shikshak sahakari Bank, Saoner, Maharashtra 441107
+                </p>
+
+                <p class="footer-gstin">
+                    GSTIN: 27AAPFG5143D1ZF
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-column footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="collection.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="termandcondition.html">
+                            Terms &amp; Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer-column footer-contact">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <a href="mailto:info@ghanshyamjewellers.com" class="footer-email">
+                    info@ghanshyamjewellers.com
+                </a>
+
+                <p class="footer-phone">
+                    <span>⌕</span>
+                    07183-232844 | +91 7057832844
+                </p>
+
+                <div class="business-hours">
+
+                    <strong>
+                        Business Hours:
+                    </strong>
+
+                    <span>
+                        Monday - Saturday
+                    </span>
+
+                    <span>
+                        10:00 AM - 9:00 PM
+                    </span>
+
+                    <span>
+                        Sunday Closed
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-divider">
+            <span>◇</span>
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Bangre Jewellers | All Rights Reserved
+            </p>
+
+            <span class="footer-credit">
+                Designed &amp; Developed by
+                <strong>Anshul Dhomne</strong>
+            </span>
+
+        </div>
+
+    </footer>
+
+    <!-- =====================================================
+         FOOTER END
+    ====================================================== -->
+
+
+
+    <!-- =====================================================
+         COLLECTION JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/collection.js"></script>
+
+
+</body>
+
+</html>

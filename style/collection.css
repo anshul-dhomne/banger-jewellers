@@ -1,0 +1,2005 @@
+/* =====================================================
+   BANGRE JEWELLERS
+   COLLECTION PAGE
+===================================================== */
+
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+
+    --burgundy: #6B3F4A;
+    --dark-burgundy: #4B2029;
+
+    --dusty-pink: #E7C9C9;
+    --soft-pink: #F2DADA;
+
+    --ivory: #F8EDE4;
+    --white: #FFFDFC;
+
+    --gold: #D4AF7A;
+    --dark-gold: #B88952;
+
+    --brown: #351517;
+    --muted-brown: #765D5A;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: var(--ivory);
+    color: var(--brown);
+
+    font-family: "Montserrat", sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* =====================================================
+   HEADER
+   HEADER STYLING IS FROM INDEX.CSS
+===================================================== */
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.collection-hero {
+
+    height: 470px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.collection-hero-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+.collection-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(90deg,
+            rgba(55, 17, 24, 0.88) 0%,
+            rgba(75, 32, 41, 0.62) 42%,
+            rgba(75, 32, 41, 0.12) 100%);
+
+}
+
+
+.collection-hero-content {
+
+    position: absolute;
+
+    z-index: 2;
+
+    left: 8%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    max-width: 600px;
+
+    color: var(--white);
+
+}
+
+
+.hero-eyebrow {
+
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--dusty-pink);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+}
+
+
+.collection-hero-content h1 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(58px, 6vw, 88px);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    margin-bottom: 22px;
+
+}
+
+
+.hero-line {
+
+    display: block;
+
+    width: 75px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+    margin-bottom: 22px;
+
+}
+
+
+.collection-hero-content p {
+
+    max-width: 470px;
+
+    color: #f7e9df;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   COLLECTION INTRO
+===================================================== */
+
+.collection-intro {
+
+    width: min(94%, 1440px);
+
+    margin: auto;
+
+    padding: 105px 20px 120px;
+
+}
+
+
+.section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+
+}
+
+
+.section-eyebrow {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--burgundy);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+}
+
+
+.section-heading h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: var(--brown);
+
+    font-size: clamp(44px, 5vw, 64px);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    margin-bottom: 16px;
+
+}
+
+
+.heading-line {
+
+    display: block;
+
+    width: 58px;
+
+    height: 2px;
+
+    background: var(--gold);
+
+    margin: 0 auto 22px;
+
+    position: relative;
+
+}
+
+
+.heading-line::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+
+    height: 6px;
+
+    background: var(--gold);
+
+    border-radius: 50%;
+
+    top: -2px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+.section-heading p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--muted-brown);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   COLLECTION FILTERS
+===================================================== */
+
+.collection-filters {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 55px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.filter-btn {
+
+    border: 1px solid rgba(107, 63, 74, 0.25);
+
+    background: transparent;
+
+    color: var(--burgundy);
+
+    padding: 11px 27px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 0.7px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+.filter-btn:hover,
+.filter-btn.active {
+
+    background: var(--burgundy);
+
+    border-color: var(--burgundy);
+
+    color: var(--white);
+
+}
+
+
+/* =====================================================
+   COLLECTION GRID
+===================================================== */
+
+.collection-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 32px 24px;
+
+    transition: opacity 0.25s ease;
+
+}
+
+
+/* =====================================================
+   COLLECTION PRODUCT CARD
+===================================================== */
+
+.collection-product {
+
+    background: var(--white);
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px rgba(75, 32, 41, 0.055);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+
+.collection-product:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 45px rgba(75, 32, 41, 0.13);
+
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.product-image {
+
+    height: 400px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--dusty-pink);
+
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+
+}
+
+
+.collection-product:hover .product-image img {
+
+    transform: scale(1.045);
+
+}
+
+
+/* =====================================================
+   PRODUCT TAG
+===================================================== */
+
+.product-tag {
+
+    position: absolute;
+
+    left: 17px;
+
+    top: 17px;
+
+    padding: 7px 12px;
+
+    background: rgba(248, 237, 228, 0.93);
+
+    color: var(--burgundy);
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* =====================================================
+   PRODUCT ARROW
+===================================================== */
+
+.product-arrow {
+
+    position: absolute;
+
+    right: 17px;
+
+    bottom: 17px;
+
+    width: 39px;
+
+    height: 39px;
+
+    border-radius: 50%;
+
+    background: var(--burgundy);
+
+    color: var(--white);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+    transition: 0.35s ease;
+
+}
+
+
+.collection-product:hover .product-arrow {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* =====================================================
+   PRODUCT TEXT
+===================================================== */
+
+.product-info {
+
+    padding: 25px 24px 28px;
+
+}
+
+
+.product-info>span {
+
+    color: var(--dark-gold);
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+}
+
+
+.product-info h3 {
+
+    margin: 7px 0 8px;
+
+    color: var(--brown);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    font-weight: 600;
+
+}
+
+
+.product-info p {
+
+    color: var(--muted-brown);
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    max-width: 250px;
+
+}
+
+
+/* =====================================================
+   DYNAMIC COLLECTION FILTER ANIMATION
+===================================================== */
+
+/*
+    JavaScript dynamically changes the jewellery
+    cards when All / Gold / Diamond / Silver
+    buttons are clicked.
+*/
+
+#collectionGrid {
+
+    transition: opacity 0.25s ease;
+
+}
+
+
+/* =====================================================
+   COLLECTION CARD FADE ANIMATION
+===================================================== */
+
+#collectionGrid .collection-product {
+
+    animation: collectionCardFade 0.45s ease both;
+
+}
+
+
+/* =====================================================
+   STAGGERED CARD ANIMATION
+===================================================== */
+
+#collectionGrid .collection-product:nth-child(1) {
+    animation-delay: 0.03s;
+}
+
+#collectionGrid .collection-product:nth-child(2) {
+    animation-delay: 0.06s;
+}
+
+#collectionGrid .collection-product:nth-child(3) {
+    animation-delay: 0.09s;
+}
+
+#collectionGrid .collection-product:nth-child(4) {
+    animation-delay: 0.12s;
+}
+
+#collectionGrid .collection-product:nth-child(5) {
+    animation-delay: 0.15s;
+}
+
+#collectionGrid .collection-product:nth-child(6) {
+    animation-delay: 0.18s;
+}
+
+#collectionGrid .collection-product:nth-child(7) {
+    animation-delay: 0.21s;
+}
+
+#collectionGrid .collection-product:nth-child(8) {
+    animation-delay: 0.24s;
+}
+
+#collectionGrid .collection-product:nth-child(9) {
+    animation-delay: 0.27s;
+}
+
+#collectionGrid .collection-product:nth-child(10) {
+    animation-delay: 0.30s;
+}
+
+#collectionGrid .collection-product:nth-child(11) {
+    animation-delay: 0.33s;
+}
+
+#collectionGrid .collection-product:nth-child(12) {
+    animation-delay: 0.36s;
+}
+
+
+/* =====================================================
+   FADE + SLIDE KEYFRAMES
+===================================================== */
+
+@keyframes collectionCardFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   SIGNATURE COLLECTION
+===================================================== */
+
+.signature-section {
+
+    width: min(94%, 1440px);
+
+    margin: 0 auto 110px;
+
+    min-height: 500px;
+
+    display: grid;
+
+    grid-template-columns: 42% 58%;
+
+    overflow: hidden;
+
+    background: var(--dusty-pink);
+
+}
+
+
+.signature-content {
+
+    padding: 75px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.signature-content>span {
+
+    color: var(--burgundy);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 16px;
+
+}
+
+
+.signature-content h2 {
+
+    color: var(--brown);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(48px, 5vw, 72px);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    margin-bottom: 22px;
+
+}
+
+
+.signature-content p {
+
+    color: var(--muted-brown);
+
+    max-width: 390px;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+.signature-button {
+
+    width: fit-content;
+
+    padding: 14px 22px;
+
+    background: var(--burgundy);
+
+    color: var(--white);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.signature-button span {
+
+    margin-left: 12px;
+
+    font-size: 15px;
+
+}
+
+
+.signature-button:hover {
+
+    background: var(--dark-burgundy);
+
+    transform: translateY(-2px);
+
+}
+
+
+.signature-image {
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+}
+
+
+.signature-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+
+}
+
+
+.signature-section:hover .signature-image img {
+
+    transform: scale(1.025);
+
+}
+
+
+/* =====================================================
+   CUSTOM JEWELLERY CTA
+===================================================== */
+
+.collection-custom {
+
+    width: 100%;
+
+    min-height: 500px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.custom-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.custom-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(90deg,
+            rgba(70, 26, 34, 0.91),
+            rgba(70, 26, 34, 0.45),
+            rgba(70, 26, 34, 0.10));
+
+}
+
+
+.collection-custom .custom-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(90%, 1400px);
+
+    min-height: 500px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.collection-custom .custom-content>span {
+
+    color: var(--dusty-pink);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.collection-custom h2 {
+
+    color: var(--white);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(50px, 5vw, 74px);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+}
+
+
+.collection-custom p {
+
+    color: #f8e8df;
+
+    max-width: 420px;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+
+}
+
+
+.custom-button {
+
+    width: fit-content;
+
+    background: var(--ivory);
+
+    color: var(--burgundy);
+
+    padding: 15px 23px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+
+.custom-button span {
+
+    margin-left: 12px;
+
+    font-size: 15px;
+
+}
+
+
+.custom-button:hover {
+
+    background: var(--gold);
+
+    color: var(--brown);
+
+}
+
+/* =====================================================
+   BANGRE JEWELLERS
+   COLLECTION PAGE
+===================================================== */
+
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root {
+
+    --burgundy: #6B3F4A;
+    --dark-burgundy: #4B2029;
+
+    --dusty-pink: #E7C9C9;
+    --soft-pink: #F2DADA;
+
+    --ivory: #F8EDE4;
+    --white: #FFFDFC;
+
+    --gold: #D4AF7A;
+    --dark-gold: #B88952;
+
+    --brown: #351517;
+    --muted-brown: #765D5A;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: var(--ivory);
+    color: var(--brown);
+
+    font-family: "Montserrat", sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* =====================================================
+   HEADER
+   HEADER STYLING IS FROM INDEX.CSS
+===================================================== */
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.collection-hero {
+
+    height: 470px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.collection-hero-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+.collection-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(90deg,
+            rgba(55, 17, 24, 0.88) 0%,
+            rgba(75, 32, 41, 0.62) 42%,
+            rgba(75, 32, 41, 0.12) 100%);
+
+}
+
+
+.collection-hero-content {
+
+    position: absolute;
+
+    z-index: 2;
+
+    left: 8%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    max-width: 600px;
+
+    color: var(--white);
+
+}
+
+
+.hero-eyebrow {
+
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--dusty-pink);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+}
+
+
+.collection-hero-content h1 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(58px, 6vw, 88px);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    margin-bottom: 22px;
+
+}
+
+
+.hero-line {
+
+    display: block;
+
+    width: 75px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+    margin-bottom: 22px;
+
+}
+
+
+.collection-hero-content p {
+
+    max-width: 470px;
+
+    color: #f7e9df;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   COLLECTION INTRO
+===================================================== */
+
+.collection-intro {
+
+    width: min(94%, 1440px);
+
+    margin: auto;
+
+    padding: 105px 20px 120px;
+
+}
+
+
+.section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+
+}
+
+
+.section-eyebrow {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--burgundy);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+}
+
+
+.section-heading h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    color: var(--brown);
+
+    font-size: clamp(44px, 5vw, 64px);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    margin-bottom: 16px;
+
+}
+
+
+.heading-line {
+
+    display: block;
+
+    width: 58px;
+
+    height: 2px;
+
+    background: var(--gold);
+
+    margin: 0 auto 22px;
+
+    position: relative;
+
+}
+
+
+.heading-line::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+
+    height: 6px;
+
+    background: var(--gold);
+
+    border-radius: 50%;
+
+    top: -2px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+.section-heading p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--muted-brown);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   COLLECTION FILTERS
+===================================================== */
+
+.collection-filters {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 55px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.filter-btn {
+
+    border: 1px solid rgba(107, 63, 74, 0.25);
+
+    background: transparent;
+
+    color: var(--burgundy);
+
+    padding: 11px 27px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 0.7px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+.filter-btn:hover,
+.filter-btn.active {
+
+    background: var(--burgundy);
+
+    border-color: var(--burgundy);
+
+    color: var(--white);
+
+}
+
+
+/* =====================================================
+   COLLECTION GRID
+===================================================== */
+
+.collection-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 32px 24px;
+
+    transition: opacity 0.25s ease;
+
+}
+
+
+/* =====================================================
+   COLLECTION PRODUCT CARD
+===================================================== */
+
+.collection-product {
+
+    background: var(--white);
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px rgba(75, 32, 41, 0.055);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+
+.collection-product:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 45px rgba(75, 32, 41, 0.13);
+
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.product-image {
+
+    height: 400px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--dusty-pink);
+
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+
+}
+
+
+.collection-product:hover .product-image img {
+
+    transform: scale(1.045);
+
+}
+
+
+/* =====================================================
+   PRODUCT TAG
+===================================================== */
+
+.product-tag {
+
+    position: absolute;
+
+    left: 17px;
+
+    top: 17px;
+
+    padding: 7px 12px;
+
+    background: rgba(248, 237, 228, 0.93);
+
+    color: var(--burgundy);
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* =====================================================
+   PRODUCT ARROW
+===================================================== */
+
+.product-arrow {
+
+    position: absolute;
+
+    right: 17px;
+
+    bottom: 17px;
+
+    width: 39px;
+
+    height: 39px;
+
+    border-radius: 50%;
+
+    background: var(--burgundy);
+
+    color: var(--white);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+    transition: 0.35s ease;
+
+}
+
+
+.collection-product:hover .product-arrow {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* =====================================================
+   PRODUCT TEXT
+===================================================== */
+
+.product-info {
+
+    padding: 25px 24px 28px;
+
+}
+
+
+.product-info>span {
+
+    color: var(--dark-gold);
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+}
+
+
+.product-info h3 {
+
+    margin: 7px 0 8px;
+
+    color: var(--brown);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    font-weight: 600;
+
+}
+
+
+.product-info p {
+
+    color: var(--muted-brown);
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    max-width: 250px;
+
+}
+
+
+/* =====================================================
+   DYNAMIC COLLECTION FILTER ANIMATION
+===================================================== */
+
+/*
+    JavaScript dynamically changes the jewellery
+    cards when All / Gold / Diamond / Silver
+    buttons are clicked.
+*/
+
+#collectionGrid {
+
+    transition: opacity 0.25s ease;
+
+}
+
+
+/* =====================================================
+   COLLECTION CARD FADE ANIMATION
+===================================================== */
+
+#collectionGrid .collection-product {
+
+    animation: collectionCardFade 0.45s ease both;
+
+}
+
+
+/* =====================================================
+   STAGGERED CARD ANIMATION
+===================================================== */
+
+#collectionGrid .collection-product:nth-child(1) {
+    animation-delay: 0.03s;
+}
+
+#collectionGrid .collection-product:nth-child(2) {
+    animation-delay: 0.06s;
+}
+
+#collectionGrid .collection-product:nth-child(3) {
+    animation-delay: 0.09s;
+}
+
+#collectionGrid .collection-product:nth-child(4) {
+    animation-delay: 0.12s;
+}
+
+#collectionGrid .collection-product:nth-child(5) {
+    animation-delay: 0.15s;
+}
+
+#collectionGrid .collection-product:nth-child(6) {
+    animation-delay: 0.18s;
+}
+
+#collectionGrid .collection-product:nth-child(7) {
+    animation-delay: 0.21s;
+}
+
+#collectionGrid .collection-product:nth-child(8) {
+    animation-delay: 0.24s;
+}
+
+#collectionGrid .collection-product:nth-child(9) {
+    animation-delay: 0.27s;
+}
+
+#collectionGrid .collection-product:nth-child(10) {
+    animation-delay: 0.30s;
+}
+
+#collectionGrid .collection-product:nth-child(11) {
+    animation-delay: 0.33s;
+}
+
+#collectionGrid .collection-product:nth-child(12) {
+    animation-delay: 0.36s;
+}
+
+
+/* =====================================================
+   FADE + SLIDE KEYFRAMES
+===================================================== */
+
+@keyframes collectionCardFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   SIGNATURE COLLECTION
+===================================================== */
+
+.signature-section {
+
+    width: min(94%, 1440px);
+
+    margin: 0 auto 110px;
+
+    min-height: 500px;
+
+    display: grid;
+
+    grid-template-columns: 42% 58%;
+
+    overflow: hidden;
+
+    background: var(--dusty-pink);
+
+}
+
+
+.signature-content {
+
+    padding: 75px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.signature-content>span {
+
+    color: var(--burgundy);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 16px;
+
+}
+
+
+.signature-content h2 {
+
+    color: var(--brown);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(48px, 5vw, 72px);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    margin-bottom: 22px;
+
+}
+
+
+.signature-content p {
+
+    color: var(--muted-brown);
+
+    max-width: 390px;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+.signature-button {
+
+    width: fit-content;
+
+    padding: 14px 22px;
+
+    background: var(--burgundy);
+
+    color: var(--white);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.signature-button span {
+
+    margin-left: 12px;
+
+    font-size: 15px;
+
+}
+
+
+.signature-button:hover {
+
+    background: var(--dark-burgundy);
+
+    transform: translateY(-2px);
+
+}
+
+
+.signature-image {
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+}
+
+
+.signature-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+
+}
+
+
+.signature-section:hover .signature-image img {
+
+    transform: scale(1.025);
+
+}
+
+
+/* =====================================================
+   CUSTOM JEWELLERY CTA
+===================================================== */
+
+.collection-custom {
+
+    width: 100%;
+
+    min-height: 500px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.custom-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.custom-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(90deg,
+            rgba(70, 26, 34, 0.91),
+            rgba(70, 26, 34, 0.45),
+            rgba(70, 26, 34, 0.10));
+
+}
+
+
+.collection-custom .custom-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(90%, 1400px);
+
+    min-height: 500px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.collection-custom .custom-content>span {
+
+    color: var(--dusty-pink);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.collection-custom h2 {
+
+    color: var(--white);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(50px, 5vw, 74px);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+}
+
+
+.collection-custom p {
+
+    color: #f8e8df;
+
+    max-width: 420px;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+
+}
+
+
+.custom-button {
+
+    width: fit-content;
+
+    background: var(--ivory);
+
+    color: var(--burgundy);
+
+    padding: 15px 23px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+
+.custom-button span {
+
+    margin-left: 12px;
+
+    font-size: 15px;
+
+}
+
+
+.custom-button:hover {
+
+    background: var(--gold);
+
+    color: var(--brown);
+
+}
+
+/* =====================================================
+   FIX - CUSTOM JEWELLERY IMAGE OVERLAY box, because custom in index.css also that why that overlay box is coming on image
+
+===================================================== */
+
+.collection-custom .custom-content {
+    background: transparent !important;
+}
+
+/* =====================================================
+   FOOTER
+   FOOTER STYLING IS FROM INDEX.CSS
+===================================================== */
